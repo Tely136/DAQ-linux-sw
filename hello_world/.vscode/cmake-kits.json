@@ -1,0 +1,6 @@
+[
+    {
+        "name": "Cora Z7 EDF SDK",
+        "environmentSetupScript": "/home/tely1/amd_sdk/cora-gpio/environment-setup-cortexa9t2hf-neon-amd-linux-gnueabi"
+    }
+]

@@ -1,0 +1,12 @@
+{
+    "folders": [
+		{
+			"name": "DAQ-linux-sw",
+			"path": "."
+		},
+		{
+			"name": "led_test",
+			"path": "led_test"
+		}
+	]
+}

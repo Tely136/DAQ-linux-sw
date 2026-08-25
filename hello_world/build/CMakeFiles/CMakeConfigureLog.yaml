@@ -1,0 +1,240 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: Linux -  - arm
+      The host system is: Linux - 6.18.33.2-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi/arm-amd-linux-gnueabi-g++ -mthumb;-mfpu=neon;-mfloat-abi=hard;-mcpu=cortex-a9;-fstack-protector-strong;-O2;-D_FORTIFY_SOURCE=2;-Wformat;-Wformat-security;-Werror=format-security;-D_TIME_BITS=64;-D_FILE_OFFSET_BITS=64;--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi
+      Build flags: -O2;-pipe;-g;-feliminate-unused-debug-types
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/tely1/DAQ-linux-sw/hello_world/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:62 (try_compile)"
+      - "/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/tely1/DAQ-linux-sw/hello_world/build/CMakeFiles/CMakeScratch/TryCompile-sT1z32"
+      binary: "/home/tely1/DAQ-linux-sw/hello_world/build/CMakeFiles/CMakeScratch/TryCompile-sT1z32"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O2 -g -feliminate-unused-debug-types"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now"
+      CMAKE_SYSROOT: "/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tely1/DAQ-linux-sw/hello_world/build/CMakeFiles/CMakeScratch/TryCompile-sT1z32'
+        
+        Run Build Command(s): /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/bin/ninja -v cmTC_60d49
+        [1/2] /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi/arm-amd-linux-gnueabi-g++   -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security -D_TIME_BITS=64 -D_FILE_OFFSET_BITS=64 --sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi --sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi   -O2 -g -feliminate-unused-debug-types    -v -o CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o -c /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi/arm-amd-linux-gnueabi-g++
+        Target: arm-amd-linux-gnueabi
+        Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=x86_64-amdedfsdk-linux --target=arm-amd-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-amd-linux-gnueabi- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/arm-amd-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.4.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-mthumb' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a9' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-D' '_TIME_BITS=64' '-D' '_FILE_OFFSET_BITS=64' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-mlibarch=armv7-a+mp+sec+simd' '-march=armv7-a+mp+sec+simd' '-dumpdir' 'CMakeFiles/cmTC_60d49.dir/'
+         /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/cc1plus -quiet -v -isysroot /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 -D _TIME_BITS=64 -D _FILE_OFFSET_BITS=64 /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_60d49.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -mtls-dialect=gnu -mlibarch=armv7-a+mp+sec+simd -march=armv7-a+mp+sec+simd -g -O2 -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fstack-protector-strong -feliminate-unused-debug-types -o /tmp/cchmdaRY.s
+        GNU C++17 (GCC) version 13.4.0 (arm-amd-linux-gnueabi)
+        	compiled by GNU C version 13.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/include"
+        ignoring nonexistent directory "/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/local/include"
+        ignoring nonexistent directory "/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/../../../../../arm-amd-linux-gnueabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0
+         /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0/arm-amd-linux-gnueabi
+         /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0/backward
+         /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/include
+         /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/include-fixed
+         /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/
+        End of search list.
+        Compiler executable checksum: 7dffe359d6613ae8fa75fb9b7658cc46
+        COLLECT_GCC_OPTIONS='-mthumb' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a9' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-D' '_TIME_BITS=64' '-D' '_FILE_OFFSET_BITS=64' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-mlibarch=armv7-a+mp+sec+simd' '-march=armv7-a+mp+sec+simd' '-dumpdir' 'CMakeFiles/cmTC_60d49.dir/'
+         /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/as -v -march=armv7-a+mp+sec+simd -mfloat-abi=hard -mfpu=neon -meabi=5 -o CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o /tmp/cchmdaRY.s
+        GNU assembler version 2.42.0 (arm-amd-linux-gnueabi) using BFD version (GNU Binutils) 2.42.0.20240723
+        COMPILER_PATH=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/
+        LIBRARY_PATH=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/
+        COLLECT_GCC_OPTIONS='-mthumb' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a9' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-D' '_TIME_BITS=64' '-D' '_FILE_OFFSET_BITS=64' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-mlibarch=armv7-a+mp+sec+simd' '-march=armv7-a+mp+sec+simd' '-dumpdir' 'CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi/arm-amd-linux-gnueabi-g++   -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security -D_TIME_BITS=64 -D_FILE_OFFSET_BITS=64 --sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi --sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi -O2 -g -feliminate-unused-debug-types -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now -v CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_60d49   && :
+        Using built-in specs.
+        COLLECT_GCC=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi/arm-amd-linux-gnueabi-g++
+        COLLECT_LTO_WRAPPER=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/lto-wrapper
+        Target: arm-amd-linux-gnueabi
+        Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=x86_64-amdedfsdk-linux --target=arm-amd-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-amd-linux-gnueabi- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/arm-amd-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.4.0 (GCC) 
+        COMPILER_PATH=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/
+        LIBRARY_PATH=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/
+        COLLECT_GCC_OPTIONS='-mthumb' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a9' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-D' '_TIME_BITS=64' '-D' '_FILE_OFFSET_BITS=64' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_60d49' '-shared-libgcc' '-mtls-dialect=gnu' '-mlibarch=armv7-a+mp+sec+simd' '-march=armv7-a+mp+sec+simd' '-dumpdir' 'cmTC_60d49.'
+         /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/collect2 -plugin /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/liblto_plugin.so -plugin-opt=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccryTDhn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_60d49 /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/Scrt1.o /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/crti.o /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/crtbeginS.o -L/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0 -L/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0 -L/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/crtendS.o /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/crtn.o
+        COLLECT_GCC_OPTIONS='-mthumb' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a9' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-D' '_TIME_BITS=64' '-D' '_FILE_OFFSET_BITS=64' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_60d49' '-shared-libgcc' '-mtls-dialect=gnu' '-mlibarch=armv7-a+mp+sec+simd' '-march=armv7-a+mp+sec+simd' '-dumpdir' 'cmTC_60d49.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:132 (message)"
+      - "/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0]
+          add: [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0/arm-amd-linux-gnueabi]
+          add: [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0/backward]
+          add: [/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/include]
+          add: [/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/include-fixed]
+          add: [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/]
+        end of search list found
+        collapse include dir [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0] ==> [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0]
+        collapse include dir [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0/arm-amd-linux-gnueabi] ==> [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0/arm-amd-linux-gnueabi]
+        collapse include dir [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0/backward] ==> [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0/backward]
+        collapse include dir [/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/include] ==> [/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/include]
+        collapse include dir [/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/include-fixed] ==> [/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/include-fixed]
+        collapse include dir [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/] ==> [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include]
+        implicit include dirs: [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0;/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0/arm-amd-linux-gnueabi;/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0/backward;/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/include;/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/include-fixed;/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:164 (message)"
+      - "/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-amd-linux-gnueabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/tely1/DAQ-linux-sw/hello_world/build/CMakeFiles/CMakeScratch/TryCompile-sT1z32']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/bin/ninja -v cmTC_60d49]
+        ignore line: [[1/2] /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi/arm-amd-linux-gnueabi-g++   -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security -D_TIME_BITS=64 -D_FILE_OFFSET_BITS=64 --sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi --sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi   -O2 -g -feliminate-unused-debug-types    -v -o CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o -c /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi/arm-amd-linux-gnueabi-g++]
+        ignore line: [Target: arm-amd-linux-gnueabi]
+        ignore line: [Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=x86_64-amdedfsdk-linux --target=arm-amd-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-amd-linux-gnueabi- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/arm-amd-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.4.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mthumb' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a9' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-D' '_TIME_BITS=64' '-D' '_FILE_OFFSET_BITS=64' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-mlibarch=armv7-a+mp+sec+simd' '-march=armv7-a+mp+sec+simd' '-dumpdir' 'CMakeFiles/cmTC_60d49.dir/']
+        ignore line: [ /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/cc1plus -quiet -v -isysroot /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 -D _TIME_BITS=64 -D _FILE_OFFSET_BITS=64 /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_60d49.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -mtls-dialect=gnu -mlibarch=armv7-a+mp+sec+simd -march=armv7-a+mp+sec+simd -g -O2 -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fstack-protector-strong -feliminate-unused-debug-types -o /tmp/cchmdaRY.s]
+        ignore line: [GNU C++17 (GCC) version 13.4.0 (arm-amd-linux-gnueabi)]
+        ignore line: [	compiled by GNU C version 13.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/../../../../../arm-amd-linux-gnueabi/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0]
+        ignore line: [ /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0/arm-amd-linux-gnueabi]
+        ignore line: [ /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0/backward]
+        ignore line: [ /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/include]
+        ignore line: [ /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/include-fixed]
+        ignore line: [ /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 7dffe359d6613ae8fa75fb9b7658cc46]
+        ignore line: [COLLECT_GCC_OPTIONS='-mthumb' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a9' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-D' '_TIME_BITS=64' '-D' '_FILE_OFFSET_BITS=64' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-mlibarch=armv7-a+mp+sec+simd' '-march=armv7-a+mp+sec+simd' '-dumpdir' 'CMakeFiles/cmTC_60d49.dir/']
+        ignore line: [ /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/as -v -march=armv7-a+mp+sec+simd -mfloat-abi=hard -mfpu=neon -meabi=5 -o CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o /tmp/cchmdaRY.s]
+        ignore line: [GNU assembler version 2.42.0 (arm-amd-linux-gnueabi) using BFD version (GNU Binutils) 2.42.0.20240723]
+        ignore line: [COMPILER_PATH=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/]
+        ignore line: [LIBRARY_PATH=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mthumb' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a9' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-D' '_TIME_BITS=64' '-D' '_FILE_OFFSET_BITS=64' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtls-dialect=gnu' '-mlibarch=armv7-a+mp+sec+simd' '-march=armv7-a+mp+sec+simd' '-dumpdir' 'CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi/arm-amd-linux-gnueabi-g++   -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security -D_TIME_BITS=64 -D_FILE_OFFSET_BITS=64 --sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi --sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi -O2 -g -feliminate-unused-debug-types -Wl -O1 -Wl --hash-style=gnu -Wl --as-needed  -Wl -z relro -z now -v CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_60d49   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi/arm-amd-linux-gnueabi-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/lto-wrapper]
+        ignore line: [Target: arm-amd-linux-gnueabi]
+        ignore line: [Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=x86_64-amdedfsdk-linux --target=arm-amd-linux-gnueabi --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-amdedfsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-amd-linux-gnueabi- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/arm-amd-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.4.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/]
+        ignore line: [LIBRARY_PATH=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/:/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mthumb' '-mfpu=neon' '-mfloat-abi=hard' '-mcpu=cortex-a9' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-D' '_TIME_BITS=64' '-D' '_FILE_OFFSET_BITS=64' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_60d49' '-shared-libgcc' '-mtls-dialect=gnu' '-mlibarch=armv7-a+mp+sec+simd' '-march=armv7-a+mp+sec+simd' '-dumpdir' 'cmTC_60d49.']
+        link line: [ /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/collect2 -plugin /home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/liblto_plugin.so -plugin-opt=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccryTDhn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_60d49 /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/Scrt1.o /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/crti.o /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/crtbeginS.o -L/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0 -L/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0 -L/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/crtendS.o /home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/crtn.o]
+          arg [/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/libexec/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccryTDhn.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-armhf.so.3] ==> ignore
+          arg [-X] ==> ignore
+          arg [-m] ==> ignore
+          arg [armelf_linux_eabi] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_60d49] ==> ignore
+          arg [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/Scrt1.o] ==> obj [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/Scrt1.o]
+          arg [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/crti.o] ==> obj [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/crti.o]
+          arg [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/crtbeginS.o] ==> obj [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/crtbeginS.o]
+          arg [-L/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0] ==> dir [/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0]
+          arg [-L/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0] ==> dir [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0]
+          arg [-L/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib] ==> dir [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib]
+          arg [-O1] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [CMakeFiles/cmTC_60d49.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/crtendS.o] ==> obj [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/crtendS.o]
+          arg [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/crtn.o] ==> obj [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/crtn.o]
+        collapse library dir [/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0] ==> [/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0]
+        collapse library dir [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0] ==> [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0]
+        collapse library dir [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib] ==> [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/Scrt1.o;/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/crti.o;/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/crtbeginS.o;/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0/crtendS.o;/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/crtn.o]
+        implicit dirs: [/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0;/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0;/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib]
+        implicit fwks: []
+      
+      
+...

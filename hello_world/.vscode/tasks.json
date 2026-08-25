@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build, Deploy, Run on Cora",
+            "type": "shell",
+            "command": "cmake --build build && scp build/hello_world amd-edf@192.168.137.20:/tmp/ && ssh amd-edf@192.168.137.20 /tmp/hello_world",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

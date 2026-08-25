@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/tely1/DAQ-linux-sw/led_test/build",
+  "command": "/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi/arm-amd-linux-gnueabi-g++   -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security -D_TIME_BITS=64 -D_FILE_OFFSET_BITS=64 --sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi --sysroot=/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types -g -std=gnu++17 -o CMakeFiles/led_test.dir/src/led_test.cpp.o -c /home/tely1/DAQ-linux-sw/led_test/src/led_test.cpp",
+  "file": "/home/tely1/DAQ-linux-sw/led_test/src/led_test.cpp",
+  "output": "CMakeFiles/led_test.dir/src/led_test.cpp.o"
+}
+]
