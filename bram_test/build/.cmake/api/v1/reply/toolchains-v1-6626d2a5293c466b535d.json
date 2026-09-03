@@ -1,0 +1,67 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0",
+						"/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0/arm-amd-linux-gnueabi",
+						"/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include/c++/13.4.0/backward",
+						"/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/include",
+						"/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0/include-fixed",
+						"/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/lib/arm-amd-linux-gnueabi/gcc/arm-amd-linux-gnueabi/13.4.0",
+						"/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib/arm-amd-linux-gnueabi/13.4.0",
+						"/home/tely1/amd_sdk/cora-gpio/sysroots/cortexa9t2hf-neon-amd-linux-gnueabi/usr/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"m",
+						"gcc_s",
+						"gcc",
+						"c",
+						"gcc_s",
+						"gcc"
+					]
+				},
+				"path" : "/home/tely1/amd_sdk/cora-gpio/sysroots/x86_64-amdedfsdk-linux/usr/bin/arm-amd-linux-gnueabi/arm-amd-linux-gnueabi-g++",
+				"version" : "13.4.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"m",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm",
+				"ccm",
+				"cxxm",
+				"c++m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
