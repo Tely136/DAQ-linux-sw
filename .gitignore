@@ -1,0 +1,5 @@
+# File from sdtgen
+*.bda
+
+# CMake generated files
+*.cmake*

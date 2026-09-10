@@ -5,11 +5,10 @@
 			"path": "."
 		},
 		{
-			"name": "led_test",
-			"path": "led_test"
+			"path": "bram_test"
 		},
 		{
-			"path": "bram_test"
+			"path": "../yocto/edf"
 		}
 	]
 }
