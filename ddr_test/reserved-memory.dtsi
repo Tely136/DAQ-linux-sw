@@ -1,0 +1,14 @@
+// Merge into the Linux boot device tree, rebuild it, and reboot before use.
+// Candidate address for the local 512 MiB DDR map; verify the deployed map.
+/ {
+    reserved-memory {
+        #address-cells = <1>;
+        #size-cells = <1>;
+        ranges;
+
+        photon_bins: photon-bins@1f000000 {
+            reg = <0x1f000000 0x1000>;
+            no-map;
+        };
+    };
+};

@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build DDR test",
+            "type": "process",
+            "command": "cmake",
+            "args": ["--build", "build"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "problemMatcher": ["$gcc"],
+            "group": {"kind": "build", "isDefault": true}
+        }
+    ]
+}

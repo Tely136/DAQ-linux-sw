@@ -1,3 +1,0 @@
-/home/tely1/DAQ-linux-sw/bram_test/build/CMakeFiles/bram_test.dir
-/home/tely1/DAQ-linux-sw/bram_test/build/CMakeFiles/edit_cache.dir
-/home/tely1/DAQ-linux-sw/bram_test/build/CMakeFiles/rebuild_cache.dir

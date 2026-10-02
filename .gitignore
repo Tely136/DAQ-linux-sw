@@ -1,5 +1,55 @@
-# File from sdtgen
-*.bda
+# Out-of-source builds (at any depth)
+build/
+build-*/
+cmake-build-*/
 
-# CMake generated files
-*.cmake*
+# CMake / Ninja / CTest generated state; keep authored *.cmake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+DartConfiguration.tcl
+Testing/
+install_manifest.txt
+compile_commands.json
+.cmake/
+build.ninja
+rules.ninja
+.ninja_deps
+.ninja_log
+CMakeUserPresets.json
+
+# Compiled objects, libraries, executables and coverage output
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dll
+*.exe
+*.elf
+*.out
+*.pdb
+*.gcda
+*.gcno
+*.gcov
+
+# AMD tool-generated state
+.Xil/
+*.bda
+vivado*.jou
+vivado*.log
+vitis*.log
+
+# Editor caches and local backups (keep VS Code configuration tracked)
+.cache/
+.vscode/ipch/
+*.swp
+*.swo
+*~
+*.before-cora-setup
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini

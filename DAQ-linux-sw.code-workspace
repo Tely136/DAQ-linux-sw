@@ -1,14 +1,143 @@
 {
-    "folders": [
-		{
-			"name": "DAQ-linux-sw",
-			"path": "."
-		},
-		{
-			"path": "bram_test"
-		},
-		{
-			"path": "../yocto/edf"
-		}
-	]
+  "folders": [
+    {
+      "name": "WSL workspace",
+      "path": "."
+    },
+    {
+      "name": "software",
+      "path": "../../../mnt/c/DAQ-HW/software"
+    },
+    {
+      "path": "../../../mnt/c/DAQ-HW/software/stream_gen_read_linux"
+    },
+    {
+      "path": "../yocto/hardware/cora-mcs/sdt"
+    }
+  ],
+  "settings": {
+    "cmake.useCMakePresets": "never",
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.buildDirectory": "/home/tely1/build/daq-hw/${workspaceRootFolderName}",
+    "cmake.configureOnOpen": false,
+    "cmake.buildBeforeRun": false,
+    "cmake.cmakePath": "/home/tely1/yocto/sdk/cora-mcs/sysroots/x86_64-amdedfsdk-linux/usr/bin/cmake",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.eol": "\n"
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Cora: Build",
+        "type": "process",
+        "command": "bash",
+        "args": [
+          "/mnt/c/DAQ-HW/scripts/cora-app.sh",
+          "build",
+          "${command:cmake.getLaunchTargetPath}"
+        ],
+        "options": {
+          "env": {
+            "CORA_HOST": "amd-edf@192.168.137.20",
+            "CORA_REMOTE_DIR": "/tmp/daq-hw-amd-edf",
+            "CORA_SDK_ENV": "/home/tely1/yocto/sdk/cora-mcs/environment-setup-cortexa9t2hf-neon-amd-linux-gnueabi",
+            "CORA_JUMP_HOST": "thomas@192.168.137.101"
+          }
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "presentation": {
+          "focus": true,
+          "panel": "dedicated",
+          "reveal": "always"
+        }
+      },
+      {
+        "label": "Cora: Build + Deploy",
+        "type": "process",
+        "command": "bash",
+        "args": [
+          "/mnt/c/DAQ-HW/scripts/cora-app.sh",
+          "deploy",
+          "${command:cmake.getLaunchTargetPath}"
+        ],
+        "options": {
+          "env": {
+            "CORA_HOST": "amd-edf@192.168.137.20",
+            "CORA_REMOTE_DIR": "/tmp/daq-hw-amd-edf",
+            "CORA_SDK_ENV": "/home/tely1/yocto/sdk/cora-mcs/environment-setup-cortexa9t2hf-neon-amd-linux-gnueabi",
+            "CORA_JUMP_HOST": "thomas@192.168.137.101"
+          }
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "presentation": {
+          "focus": true,
+          "panel": "dedicated",
+          "reveal": "always"
+        }
+      },
+      {
+        "label": "Cora: Build + Deploy + Run",
+        "type": "process",
+        "command": "bash",
+        "args": [
+          "/mnt/c/DAQ-HW/scripts/cora-app.sh",
+          "run",
+          "${command:cmake.getLaunchTargetPath}"
+        ],
+        "options": {
+          "env": {
+            "CORA_HOST": "amd-edf@192.168.137.20",
+            "CORA_REMOTE_DIR": "/tmp/daq-hw-amd-edf",
+            "CORA_SDK_ENV": "/home/tely1/yocto/sdk/cora-mcs/environment-setup-cortexa9t2hf-neon-amd-linux-gnueabi",
+            "CORA_JUMP_HOST": "thomas@192.168.137.101"
+          }
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "presentation": {
+          "focus": true,
+          "panel": "dedicated",
+          "reveal": "always"
+        }
+      },
+      {
+        "label": "Cora: Build + Deploy + Run as root",
+        "type": "process",
+        "command": "bash",
+        "args": [
+          "/mnt/c/DAQ-HW/scripts/cora-app.sh",
+          "run-root",
+          "${command:cmake.getLaunchTargetPath}"
+        ],
+        "options": {
+          "env": {
+            "CORA_HOST": "amd-edf@192.168.137.20",
+            "CORA_REMOTE_DIR": "/tmp/daq-hw-amd-edf",
+            "CORA_SDK_ENV": "/home/tely1/yocto/sdk/cora-mcs/environment-setup-cortexa9t2hf-neon-amd-linux-gnueabi",
+            "CORA_JUMP_HOST": "thomas@pi5"
+          }
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "presentation": {
+          "focus": true,
+          "panel": "dedicated",
+          "reveal": "always"
+        }
+      }
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-vscode.cmake-tools",
+      "ms-vscode.cpptools"
+    ]
+  }
 }

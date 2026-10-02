@@ -1,3 +1,0 @@
-/home/tely1/DAQ-linux-sw/led_test/build/CMakeFiles/led_test.dir
-/home/tely1/DAQ-linux-sw/led_test/build/CMakeFiles/edit_cache.dir
-/home/tely1/DAQ-linux-sw/led_test/build/CMakeFiles/rebuild_cache.dir
