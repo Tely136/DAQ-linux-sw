@@ -11,6 +11,110 @@
 			"group": "build",
 			"problemMatcher": [],
 			"detail": "CMake template build task"
-		}
+		},
+		{
+        "label": "Cora: Build",
+        "type": "process",
+        "command": "bash",
+        "args": [
+          "/mnt/c/Users/tely1/PhD/DAQ-HW/scripts/cora-app.sh",
+          "build",
+          "${command:cmake.getLaunchTargetPath}"
+        ],
+        "options": {
+          "env": {
+            "CORA_HOST": "amd-edf@192.168.137.20",
+            "CORA_REMOTE_DIR": "/tmp/daq-hw-amd-edf",
+            "CORA_SDK_ENV": "/home/tely1/yocto/sdk/cora-mcs/environment-setup-cortexa9t2hf-neon-amd-linux-gnueabi",
+            "CORA_JUMP_HOST": "thomas@192.168.137.101"
+          }
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "presentation": {
+          "focus": true,
+          "panel": "dedicated",
+          "reveal": "always"
+        }
+      },
+      {
+        "label": "Cora: Build + Deploy",
+        "type": "process",
+        "command": "bash",
+        "args": [
+          "/mnt/c/Users/tely1/PhD/DAQ-HW/scripts/cora-app.sh",
+          "deploy",
+          "${command:cmake.getLaunchTargetPath}"
+        ],
+        "options": {
+          "env": {
+            "CORA_HOST": "amd-edf@192.168.137.20",
+            "CORA_REMOTE_DIR": "/tmp/daq-hw-amd-edf",
+            "CORA_SDK_ENV": "/home/tely1/yocto/sdk/cora-mcs/environment-setup-cortexa9t2hf-neon-amd-linux-gnueabi",
+            "CORA_JUMP_HOST": "thomas@192.168.137.101"
+          }
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "presentation": {
+          "focus": true,
+          "panel": "dedicated",
+          "reveal": "always"
+        }
+      },
+      {
+        "label": "Cora: Build + Deploy + Run",
+        "type": "process",
+        "command": "bash",
+        "args": [
+          "/mnt/c/Users/tely1/PhD/DAQ-HW/scripts/cora-app.sh",
+          "run",
+          "${command:cmake.getLaunchTargetPath}"
+        ],
+        "options": {
+          "env": {
+            "CORA_HOST": "amd-edf@192.168.137.20",
+            "CORA_REMOTE_DIR": "/tmp/daq-hw-amd-edf",
+            "CORA_SDK_ENV": "/home/tely1/yocto/sdk/cora-mcs/environment-setup-cortexa9t2hf-neon-amd-linux-gnueabi",
+            "CORA_JUMP_HOST": "thomas@192.168.137.101"
+          }
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "presentation": {
+          "focus": true,
+          "panel": "dedicated",
+          "reveal": "always"
+        }
+      },
+      {
+        "label": "Cora: Build + Deploy + Run as root",
+        "type": "process",
+        "command": "bash",
+        "args": [
+          "/mnt/c/Users/tely1/PhD/DAQ-HW/scripts/cora-app.sh",
+          "run-root",
+          "${command:cmake.getLaunchTargetPath}"
+        ],
+        "options": {
+          "env": {
+            "CORA_HOST": "amd-edf@192.168.137.20",
+            "CORA_REMOTE_DIR": "/tmp/daq-hw-amd-edf",
+            "CORA_SDK_ENV": "/home/tely1/yocto/sdk/cora-mcs/environment-setup-cortexa9t2hf-neon-amd-linux-gnueabi",
+            "CORA_JUMP_HOST": "thomas@pi5"
+          }
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "presentation": {
+          "focus": true,
+          "panel": "dedicated",
+          "reveal": "always"
+        }
+      }
 	]
 }

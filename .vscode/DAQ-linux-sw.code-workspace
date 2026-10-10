@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../mnt/c/Users/tely1/PhD/DAQ-HW/scripts"
+		},
+		{
+			"path": "../../../../mnt/c/Users/tely1/PhD/DAQ-HW/software"
+		},
+		{
+			"path": "../../../../mnt/c/Users/tely1/PhD/DAQ-HW/software/stream_gen_read_linux"
+		},
+		{
+			"path": "../../yocto/hardware/cora-mcs/sdt"
+		},
+		{
+			"path": "../../yocto/custom-layers/meta-cora"
+		}
+	],
+	"settings": {}
+}
